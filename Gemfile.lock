@@ -102,6 +102,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.1-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.13.1-x86_64-linux)
+      racc (~> 1.4)
     pg (1.2.3)
     public_suffix (4.0.6)
     puma (4.3.10)
@@ -182,6 +184,9 @@ GEM
     unicorn (6.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
+    unicorn-rails (2.2.1)
+      rack
+      unicorn
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -204,6 +209,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
@@ -221,12 +227,10 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   unicorn
+  unicorn-rails
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
-
-RUBY VERSION
-   ruby 3.0.1p64
 
 BUNDLED WITH
    2.3.0
